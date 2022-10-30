@@ -12,9 +12,9 @@ jobs:
     - name: Install Ngrok.
       run: |
         Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
-        Invoke-WebRequest https://raw.githubusercontent.com/AgisTriyagi/RDP2C7GBR6H/main/start.bat -OutFile start.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/AgisTriyagi/RDP2C7GBR6H/main/images.jpeg -OutFile wallpaper.bmp
-        Invoke-WebRequest https://raw.githubusercontent.com/AgisTriyagi/RDP2C7GBR6H/main/wallpaper.bat -OutFile wallpaper.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/Ahmadali1405/VPS-RDP/main/start.bat -OutFile start.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/Ahmadali1405/VPS-RDP/main/images.jpeg -OutFile wallpaper.bmp
+        Invoke-WebRequest https://raw.githubusercontent.com/Ahmadali1405/VPS-RDP/main/wallpaper.bat -OutFile wallpaper.bat
     - name: Extract Ngrok File.
       run: Expand-Archive ngrok.zip
     - name: Connect To Acc Ngrok.
@@ -34,5 +34,5 @@ jobs:
       run: cmd /c start.bat
     - name: Success.
       run: | 
-        Invoke-WebRequest https://raw.githubusercontent.com/AgisTriyagi/RDP2C7GBR6H/main/loop.ps1 -OutFile loop.ps1
+        Invoke-WebRequest https://raw.githubusercontent.com/Ahmadali1405/VPS-RDP/main/loop.ps1 -OutFile loop.ps1
         ./loop.ps1
