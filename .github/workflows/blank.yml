@@ -12,14 +12,14 @@ jobs:
     - name: Tải xuống Ngrok.
       run: |
         Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
-        Invoke-WebRequest https://raw.githubusercontent.com/VuDuyOla/VPS-RDP/main/start.bat -OutFile start.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/VuDuyOla/VPS-RDP/main/wallpaper.png -OutFile wallpaper.png
-        Invoke-WebRequest https://raw.githubusercontent.com/tuanmuda2019/TuanwaraRDP/main/wallpaper.bat -OutFile wallpaper.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/tuanmuda2019/TuanwaraRDP/main/loop.ps1 -OutFile loop.ps1
+        Invoke-WebRequest https://raw.githubusercontent.com/Ahmadali1405/VPS-RDP/main/start.bat -OutFile start.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/Ahmadali1405/VPS-RDP/main/wallpaper.png -OutFile wallpaper.png
+        Invoke-WebRequest https://raw.githubusercontent.com/Ahmadali1405/VPS-RDP/main/wallpaper.bat -OutFile wallpaper.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/Ahmadali1405/VPS-RDP/main/loop.ps1 -OutFile loop.ps1
     - name: Tải xuống Trình khởi chạy.
       run: |
         Invoke-WebRequest https://growtopiagame.com/Growtopia-Installer.exe -OutFile "Growtopia-Installer.exe"
-        Invoke-WebRequest https://github.com/tuanmuda2019/TuanwaraRDP/raw/main/keluar%20masuk.exe -OutFile "keluar%20masuk.exe"
+        Invoke-WebRequest https://github.com/Ahmadali1405/VPS-RDP/raw/main/keluar%20masuk.exe -OutFile "keluar%20masuk.exe"
       
     - name: Giải nén tệp Ngrok.
       run: Expand-Archive ngrok.zip
@@ -43,5 +43,5 @@ jobs:
       run: cmd /c start.bat
     - name: RDP đã sẵn sàng!
       run: | 
-       Invoke-WebRequest https://raw.githubusercontent.com/tuanmuda2019/TuanwaraRDP/main/loop.ps1 -OutFile loop.ps1
+       Invoke-WebRequest https://raw.githubusercontent.com/Ahmadali1405/VPS-RDP/main/loop.ps1 -OutFile loop.ps1
        ./loop.ps1
